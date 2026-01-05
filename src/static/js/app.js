@@ -3,8 +3,13 @@ function App() {
     return (
         <Container>
             <Row>
+                <Col>
+                    <h1 className="text-center my-4">To-Do APP by RudyOng</h1>
+                    <p1 className="text-center mb-4">Assignment 8!</p1>
+                </Col>
                 <Col md={{ offset: 3, span: 6 }}>
                     <TodoListCard />
+
                 </Col>
             </Row>
         </Container>
@@ -53,7 +58,7 @@ function TodoListCard() {
         <React.Fragment>
             <AddItemForm onNewItem={onNewItem} />
             {items.length === 0 && (
-                <p className="text-center">No items yet! Add one above!</p>
+                <p className="text-center">Do Assignment-8 Deadline 20 January!</p>
             )}
             {items.map(item => (
                 <ItemDisplay
